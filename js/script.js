@@ -9,10 +9,10 @@ va applicato uno sconto del 40% per gli over 65.
 /* 
 1-recupero gli elementi di mio interesse dal DOM.
 2-creo una costante prezzo/km.
-3-creo una costante per lo sconto del 20% per i minorenni.
-4-creo una costante per lo sconto del 40% per gli over 65.
-5-chiedo all'utente i km che vuole percorrere.
-6-chiedo all'utente la sua età.
+3-chiedo all'utente i km che vuole percorrere.
+4-chiedo all'utente la sua età.
+5-creo una costante per lo sconto del 20% per i minorenni.
+6-creo una costante per lo sconto del 40% per gli over 65.
 7-calcolo il prezzo in base ai kilometri.
 8-applico uno sconto se possibile.
 9-stampo il documento.
@@ -36,3 +36,6 @@ console.log('finalPrice', finalPrice)
 
 const priceByKm = 0.21;
 console.log('priceByKm', priceByKm)
+
+//3-creo una costante per lo sconto del 20% per i minorenni.
+
