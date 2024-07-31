@@ -14,9 +14,8 @@ va applicato uno sconto del 40% per gli over 65.
 5-calcolo il prezzo base del biglietto
 6-creo una costante per lo sconto del 20% per i minorenni.
 7-creo una costante per lo sconto del 40% per gli over 65.
-8-calcolo il prezzo in base ai kilometri.
-9-applico uno sconto se possibile.
-10-stampo il documento.
+8-applico uno sconto se possibile.
+9-stampo il documento.
 */
 
 //1-recupero gli elementi di mio interesse dal DOM.
@@ -56,6 +55,11 @@ console.log('basePrice',basePrice);
 //6-creo una costante per lo sconto del 20% per i minorenni.
 
 const underDiscount = ((basePrice * 20)/100);
-console.log('underDiscount', underDiscount)
+console.log('underDiscount', underDiscount);
+
+//7-creo una costante per lo sconto del 40% per gli over 65.
+
+const overDiscount = ((basePrice * 40)/100);
+console.log('overDiscount', overDiscount);
 
 
