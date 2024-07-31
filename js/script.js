@@ -11,12 +11,12 @@ va applicato uno sconto del 40% per gli over 65.
 2-creo una costante prezzo/km.
 3-chiedo all'utente i km che vuole percorrere.
 4-chiedo all'utente la sua età.
-4-calcolo il prezzo base del biglietto
-5-creo una costante per lo sconto del 20% per i minorenni.
-6-creo una costante per lo sconto del 40% per gli over 65.
-7-calcolo il prezzo in base ai kilometri.
-8-applico uno sconto se possibile.
-9-stampo il documento.
+5-calcolo il prezzo base del biglietto
+6-creo una costante per lo sconto del 20% per i minorenni.
+7-creo una costante per lo sconto del 40% per gli over 65.
+8-calcolo il prezzo in base ai kilometri.
+9-applico uno sconto se possibile.
+10-stampo il documento.
 */
 
 //1-recupero gli elementi di mio interesse dal DOM.
@@ -48,9 +48,14 @@ console.log('userDistance', userDistance);
 const userAge = parseInt(prompt('Quanti anni hai?',72));
 console.log('userAge', userAge);
 
-//4-calcolo il prezzo base del biglietto
+//5-calcolo il prezzo base del biglietto
 
 const basePrice = (userDistance * 0.21)
 console.log('basePrice',basePrice);
+
+//6-creo una costante per lo sconto del 20% per i minorenni.
+
+const underDiscount = ((basePrice * 20)/100);
+console.log('underDiscount', underDiscount)
 
 
