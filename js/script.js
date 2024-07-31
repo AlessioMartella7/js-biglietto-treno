@@ -55,25 +55,29 @@ console.log('basePrice',basePrice);
 //6-creo una costante per lo sconto del 20% per i minorenni.
 
 const underDiscount = ((basePrice * 20)/100);
-const underDiscounted = (basePrice - underDiscount)
-console.log('underDiscount', underDiscount);
-console.log('underDiscounted', underDiscounted);
+console.log('underDiscount',underDiscount)
 
 //7-creo una costante per lo sconto del 40% per gli over 65.
 
 const overDiscount = ((basePrice * 40)/100);
-const overDiscounted = (basePrice - overDiscount)
-console.log('overDiscount', overDiscount);
-console.log('overDiscounted', overDiscounted);
-
-
+console.log('overDiscount',overDiscount)
 
 //8-calcolo il prezzo finale.
 
-let message = '';
+let finalPrice = `${basePrice} €`;
 
-if(userAge <= 18) {
-    message = `${underDiscount} € `
-    console.log(message)
-}
+if (userAge <= 18) {
+    finalPrice = (basePrice - underDiscount).toFixed(2) + ' €';
+} else if (userAge >= 65 ) {
+    finalPrice = (basePrice - overDiscount).toFixed(2) + ' €';
+} 
+
+console.log('finalPrice', finalPrice);
+
+// stampo il documento
+
+regularPriceElement.innerText = basePrice + ' €';
+ageElement.innerText = userAge;
+distanceElement.innerText = userDistance + ' Km';
+finalPriceElement.innerText = finalPrice;
 
