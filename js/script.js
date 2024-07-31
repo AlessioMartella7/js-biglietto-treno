@@ -17,3 +17,17 @@ va applicato uno sconto del 40% per gli over 65.
 8-applico uno sconto se possibile.
 9-stampo il documento.
 */
+
+//1-recupero gli elementi di mio interesse dal DOM.
+
+const regularPrice = document.getElementById('regular-price');
+console.log('regularPrice', regularPrice)
+
+const userAge = document.getElementById('age');
+console.log('userAge', userAge)
+
+const distanceKm = document.getElementById('distance');
+console.log('distanceKm', distanceKm)
+
+const finalPrice = document.getElementById('total');
+console.log('finalPrice', finalPrice)
