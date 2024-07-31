@@ -14,7 +14,7 @@ va applicato uno sconto del 40% per gli over 65.
 5-calcolo il prezzo base del biglietto
 6-creo una costante per lo sconto del 20% per i minorenni.
 7-creo una costante per lo sconto del 40% per gli over 65.
-8-applico uno sconto se possibile.
+8-calcolo il prezzo finale.
 9-stampo il documento.
 */
 
@@ -55,11 +55,25 @@ console.log('basePrice',basePrice);
 //6-creo una costante per lo sconto del 20% per i minorenni.
 
 const underDiscount = ((basePrice * 20)/100);
+const underDiscounted = (basePrice - underDiscount)
 console.log('underDiscount', underDiscount);
+console.log('underDiscounted', underDiscounted);
 
 //7-creo una costante per lo sconto del 40% per gli over 65.
 
 const overDiscount = ((basePrice * 40)/100);
+const overDiscounted = (basePrice - overDiscount)
 console.log('overDiscount', overDiscount);
+console.log('overDiscounted', overDiscounted);
 
+
+
+//8-calcolo il prezzo finale.
+
+let message = '';
+
+if(userAge <= 18) {
+    message = `${underDiscount} € `
+    console.log(message)
+}
 
