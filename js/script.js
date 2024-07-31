@@ -20,22 +20,26 @@ va applicato uno sconto del 40% per gli over 65.
 
 //1-recupero gli elementi di mio interesse dal DOM.
 
-const regularPrice = document.getElementById('regular-price');
-console.log('regularPrice', regularPrice)
+const regularPriceElement = document.getElementById('regular-price');
+console.log('regularPriceElement', regularPriceElement)
 
-const userAge = document.getElementById('age');
-console.log('userAge', userAge)
+const ageElement = document.getElementById('age');
+console.log('ageElement', ageElement)
 
-const distanceKm = document.getElementById('distance');
-console.log('distanceKm', distanceKm)
+const distanceElement = document.getElementById('distance');
+console.log('distanceElement', distanceElement)
 
-const finalPrice = document.getElementById('total');
-console.log('finalPrice', finalPrice)
+const finalPriceElement = document.getElementById('total');
+console.log('finalPriceElement', finalPriceElement)
 
 //2-creo una costante prezzo/km.
 
 const priceByKm = 0.21;
 console.log('priceByKm', priceByKm)
 
-//3-creo una costante per lo sconto del 20% per i minorenni.
+//3-chiedo all'utente i km che vuole percorrere.
+
+const userDistance = parseInt(prompt('Quanti Kilometri vuoi percorrere?',128));
+console.log('userDistance', userDistance)
+
 
